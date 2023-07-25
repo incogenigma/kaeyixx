@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Good Website</title>
+</head>
+<body>
+    <h1>Welcome to My Very Good Website</h1>
+
+    <script>
+        // Your Python code goes here
+        console.log("Best website made by a 15-year-old with no prior experience!\n");
+        console.log("Disclaimer: This website does not store or record any information given! Everything on this website is 100% a joke and shouldn't be taken seriously at all. And this whole thing was made in like 2 hours, so sorry for any bugs or mistakes! Thx sm :D\n");
+        console.log("Okay, let's get started!\n");
+
+        var myName = prompt("First, what's your name?");
+        console.log("Nice to meet you, " + myName + "!\n");
+
+        var myAge = parseInt(prompt("So, how old are you, " + myName + "?"));
+        if (myAge == 16) {
+            console.log("Woah, 16? You better have a job or at least be able to drive by now, right?\n");
+        } else if (myAge < 16) {
+            console.log("A youngling I see! Fancy seeing you around here.\n");
+        } else if (myAge > 16) {
+            console.log("Jeez, you're old man. I'm sure your bones are crumbling into ashes as we speak.\n");
+        }
+
+        console.log("Alright next,");
+
+        var myDay = prompt("How're you doing today?");
+        console.log("Honestly, I couldn't care less. If it was good, good for you. Otherwise, I don't wanna hear it, sorry! Anyways, " + myName + ", I have some more questions for you. Is that alright?\n");
+
+        var askQuestions = prompt("Yes or no?").trim().toLowerCase();
+
+        if (askQuestions === "yes") {
+            console.log("Great!\n");
+
+            var mcR = prompt("Do you like My Chemical Romance?").trim().toLowerCase();
+
+            if (mcR === "yes") {
+                console.log("Hehe, you're cool!\n");
+                var myChem = prompt("Who's your favorite member? First names will do fine.");
+                if (myChem === "gerard") {
+                    console.log("I bet you like lemons huh?\n");
+                } else if (myChem === "frank") {
+                    console.log("You're a silly goose!!\n");
+                } else if (myChem === "ray") {
+                    console.log("You really appreciate talent. I respect that!\n");
+                } else if (myChem === "mikey") {
+                    console.log("You're probably scared of the dark. I won't elaborate.\n");
+                }
+
+            } else if (mcR === "no") {
+                console.log("...");
+                console.log("That's it, you fail. You fail everything. That's right, this was all a test. A simulation. A sort of way to figure out information about you. And you've failed. Miserably. Goodbye, " + myName + ". Never contact me again.");
+            }
+
+        } else if (askQuestions === "no") {
+            console.log("Oh, okay then. I guess you'll never get to see the end of this super cool website. That's fine. Goodbye, " + myName + ".");
+        }
+    </script>
+</body>
+</html>
